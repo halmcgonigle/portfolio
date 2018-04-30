@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Hal McGonigle</title>
+            
+            <!-- ICONS -->
+            <script defer src="svg-with-js/js/fontawesome-all.js"></script>
+            <!-- CSS -->
+            <link rel="stylesheet" type="text/css" href="style2.css">
+            <!-- FONTS -->
+            <link href="https://fonts.googleapis.com/css?family=Paytone+One|Poppins:400,500,600" rel="stylesheet">
+            <!-- ANIMATE.CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+            <!-- JQUERY BUTTON -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        </head> 
+    
+    <body>
+        <div class="grid-wrapper">
+            
+            <div class="ParallaxContainer">
+            <div class="header">
+            <div class="nav">
+                <nav>
+                    <ul>
+                    <li><a href="#home"><h2>HOME</h2></a></li>
+                
+                    <li><a href="#about"><h2>ABOUT</h2></a></li>
+            
+                    <li><a href="#work"><h2>WORK</h2></a></li>
+                    
+                    <li><a href="#contact"><h2>CONTACT</h2></a></li>
+                </ul>
+                </nav>
+            
+            </div>
+                
+            
+            
+            <img src="img/wordmark.png" alt="wordmark"> <a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
+                
+                </div>
+            </div>
+                
+            
+        
+            
+            <div class="ContentContainer">
+            <section id="about">
+            <div class="about">
+                <div class="about-text"><p>Hey folks!
+            My name is Hal and I'm an Interaction Design Student at UU Belfast. I have a passion for UX/UI Design, focusing on unique styles and attention to detail with an enthusiastic approach.</p>
+            <br><br>
+            <p>Hailing from the North Coast, I love being outdoors. I also enjoy travelling, playing music and exploring new technology. I hope you enjoy my website - any questions <a href="#contact">just shout!</a></p></div>
+                
+                <div class="avatar"><img class="avatar" src="img/avatar3.png" alt="avatar" onmouseover="this.src='img/avatar2.png'" onmouseout="this.src='img/avatar3.png'"/></div>
+            </div>
+            </section>
+
+            <section id="work">
+                <div class="heading"><h1>A SNEAK PEEK</h1></div>
+                
+                <div class="work">
+                    
+                <div class="portfolio-grid">
+                    <div class="project-item"><img src="img/project01.gif"></div>
+                    <div class="project-item"><img src="img/project02.gif"></div>
+                    
+                    <div class="project-item"><img src="img/project03.gif"></div>  
+                    
+                    <div class="project-item"><a href="https://placeholder.com"><img src="http://via.placeholder.com/300x175"></a></div>
+                    <div class="project-item"><a href="https://placeholder.com"><img src="http://via.placeholder.com/300x175"></a></div>
+                    <div class="project-item"><a href="https://placeholder.com"><img src="http://via.placeholder.com/300x175"></a></div>  
+                </div>
+            
+            </div>
+            </section>
+                
+            
+            <section id="contact">
+            <div class="contact">
+                
+                <div class="contact-text">
+                    
+                <p3>GIVE ME A SHOUT!</p3>
+                <p>I'd love to hear from you.</p>
+                <p1><a href="mailto:hey@halmcgonigle.com" title="Give me a shout!">HEY@HALMCGONIGLE.COM</a></p1>
+                
+                </div>
+                
+                <div class="contact-icons">
+                    
+                    <a href="https://www.instagram.com/halmcgoo/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                
+                    <a href="https://www.twitter.com/halmcgoo/" target="_blank" title="Twitter" ><i class="fab fa-twitter"></i></a>
+                    
+                    <a href="https://halmcgoo.tumblr.com/" target="_blank"  title="Tumblr"><i class="fab fa-tumblr-square"></i></a>
+                                        
+                </div>
+                </div>
+                
+                
+                <div class="footer">
+                    
+                    <footer>
+                   &copy; 2018 Designed & Coded by Hal McGonigle.
+                    <a href="#" class="go-top">Go Top</a>   
+                </footer>
+                    
+                </div>
+                </section>
+            </div>
+        </div>
+        <script>$(document).ready(function() {
+                
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+  
+
+  

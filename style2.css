@@ -1,0 +1,316 @@
+/*----- CSS RESET ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper {
+    display: grid;
+}
+
+/*----- NAVIGATION ----- */
+
+.nav {
+    display: grid;
+    background-color: #223E7B;
+    width: 100%;
+    border-bottom: 5px solid #537ebf;
+    outline: 5px solid #6bcbe0;
+    position: fixed;
+}
+
+.nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+.nav h2:hover{
+    -webkit-animation: pulse 0.75s;
+    animation: pulse 0.75s;
+}
+
+.nav h2 {
+  font-family: 'Reef', sans-serif;
+  font-size: 50pt;
+  color: #FFFFFF;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/*----- HEADER ----- */
+
+.header {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  align-items: center;
+  text-align: center;
+  background: #223E7B;
+}
+
+.header img {
+    margin: auto;
+    background: #223E7B;
+    margin-top: 200px;
+    
+}
+
+.fa-chevron-circle-down {
+    font-size: 50px;
+    color: white;
+    margin-top: 550px;
+}
+
+/*----- ABOUT ----- */
+
+.about {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    grid-template-rows: 100vh;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "about-text avatar";
+  
+}
+
+.about-text {
+    grid-area: about-text;
+    background-color: #FFFFFF;
+}
+
+.about p {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 30pt;
+    text-align: left;
+    color: #223E7B; 
+    padding-left: 5px;
+}
+
+.about a {
+    color: #6BCBE0;
+    text-decoration: none;
+}
+
+.avatar {
+    grid-area: avatar;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/*----- PORTFOLIO ----- */
+
+.heading {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: #223E7B;
+    grid-template-rows: 20vh;
+}
+
+h1 {
+    font-family: 'Peace Sans', sans-serif;
+    font-size: 65pt;
+    color: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40vh 40vh;
+}
+
+.project-item {
+    background-color: #223E7B;
+    border: 10px solid #223E7B;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio-grid.project-item {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-grid img {
+	opacity: .8;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+    
+.portfolio-grid img:hover {
+	opacity: 1;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 1);
+}
+
+/*----- CONTACT ----- */
+
+.contact {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    background: #ffffff;
+    grid-template-rows: 30vh;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "contact-text contact-icons";
+}
+
+.contact-text {
+    grid-area: contact-text;
+    background-color: #FFFFFF;
+}
+
+.contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25pt;
+    color: #223E7B;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.contact p1 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25pt;
+    color: #6BCBE0;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.contact p3 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 35pt;
+    color: #223E7B;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.contact-text a {
+    color: #6BCBE0;
+    text-decoration: none;
+}
+
+.contact-icons {
+    grid-area: contact-icons;
+    text-align: right;
+}
+
+/*----- SOCIAL MEDIA ----- */
+
+.fa-address-card {
+    color: #4257a6;
+    font-size: 50px;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.fa-address-card:hover {
+    opacity: 1;
+}
+
+.fa-instagram {
+    color: #4257a6;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-instagram:hover {
+    opacity: 1;
+}
+
+.fa-twitter {
+    color: #527fbf;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-twitter:hover {
+    opacity: 1;
+}
+
+.fa-tumblr-square {
+    color: #31a1db;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-tumblr-square:hover {
+    opacity: 1;
+}
+
+/*----- FOOTER ----- */
+
+.footer {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    color: #223E7B;
+    text-align: center;
+}
+
+/*----- SCROLL ----- */
+
+.grid-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: static;
+  display: block;
+  background-color: white;
+  z-index: 1;
+    position: relative;
+}
+
+.ParallaxContainer {
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+
+/*----- RETURN TO TOP ----- */
+ 
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
