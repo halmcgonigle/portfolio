@@ -66,6 +66,13 @@
     margin-top: 550px;
 }
 
+/*----- ARROW ----- */
+
+#down-arrow:hover{
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+
 /*----- ABOUT ----- */
 
 .about {
@@ -298,19 +305,3 @@ footer {
 }
 
 /*----- RETURN TO TOP ----- */
- 
-.go-top {
-	position: fixed;
-	bottom: 2em;
-	right: 2em;
-	text-decoration: none;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	font-size: 12px;
-	padding: 1em;
-	display: none;
-}
-
-.go-top:hover {
-	background-color: rgba(0, 0, 0, 0.6);
-}

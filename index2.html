@@ -13,8 +13,6 @@
             <link href="https://fonts.googleapis.com/css?family=Paytone+One|Poppins:400,500,600" rel="stylesheet">
             <!-- ANIMATE.CSS -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-            <!-- JQUERY BUTTON -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         
         </head> 
     
@@ -40,7 +38,7 @@
                 
             
             
-            <img src="img/wordmark.png" alt="wordmark"> <a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
+            <img src="img/wordmark.png" alt="wordmark"> <a href="#about"><i class="fas fa-chevron-circle-down" id="down-arrow"></i></a>
                 
                 </div>
             </div>
@@ -114,23 +112,6 @@
                 </section>
             </div>
         </div>
-        <script>$(document).ready(function() {
-                
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 200) {
-					$('.go-top').fadeIn(200);
-				} else {
-					$('.go-top').fadeOut(200);
-				}
-			});
-			
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				
-				$('html, body').animate({scrollTop: 0}, 300);
-			})
-		});
-        </script>
     </body>
 </html>
 
