@@ -9,6 +9,20 @@
     display: grid;
 }
 
+/*----- FONTS ----- */
+
+@font-face {
+    font-family: 'Reef';
+    src: url(fonts/Reef.oft);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Peace Sans';
+    src: url(fonts/Peace Sans.oft);
+    font-style: normal;
+}
+
 /*----- NAVIGATION ----- */
 
 .nav {
@@ -166,15 +180,6 @@ h3 {
 .portfolio-grid.project-item {
   max-width: 100%;
   height: auto;
-}
-
-.portfolio-grid img {
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-    
-.portfolio-grid img:hover {
-    box-shadow: 0 5px 5px  rgba(0, 0, 0, 1);
 }
 
 /*----- CONTACT ----- */
