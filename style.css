@@ -42,15 +42,15 @@
     
 }
 
-.nav h2:hover{
-    -webkit-animation: pulse 0.75s;
-    animation: pulse 0.75s;
-}
-
-.nav h2 {
+.nav h1 {
   font-family: 'Reef', sans-serif;
   font-size: 30pt;
   color: #FFFFFF;
+}
+
+.nav h1:hover{
+    -webkit-animation: pulse 0.75s;
+    animation: pulse 0.75s;
 }
 
 .nav a {
@@ -76,13 +76,13 @@
     
 }
 
+/*----- ARROW ----- */
+
 .fa-chevron-circle-down {
     font-size: 50px;
     color: white;
     margin-top: 550px;
 }
-
-/*----- ARROW ----- */
 
 #down-arrow:hover{
     -webkit-animation: bounce 1s;
@@ -150,12 +150,12 @@
 }
 
 h1 {
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Peace Sans', sans-serif;
     font-size: 55pt;
     color: white;
 }
 
-h3 {
+h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20pt;
@@ -220,7 +220,7 @@ h3 {
     color: #4257a6;
 }
 
-.contact p3 {
+.contact p2 {
     font-family: 'Paytone One', sans-serif;
     font-size: 35pt;
     color: #223E7B;
@@ -240,7 +240,7 @@ h3 {
 .contact-icons {
     grid-area: contact-icons;
     text-align: right;
-    padding-right: 
+    padding-right: 40px;
 }
 
 /*----- SOCIAL MEDIA ----- */
@@ -308,7 +308,7 @@ footer {
     text-align: center;
 }
 
-/*----- SCROLL ----- */
+/*----- INTRO SCROLL ----- */
 
 .grid-wrapper {
   perspective: 1px;
