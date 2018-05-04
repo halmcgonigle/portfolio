@@ -1,0 +1,339 @@
+/*----- CSS RESET ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper {
+    display: grid;
+}
+
+/*----- FONTS ----- */
+
+@font-face {
+    font-family: 'Reef';
+    src: url(fonts/Reef.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Peace Sans';
+    src: url(fonts/PeaceSans.otf);
+    font-style: normal;
+}
+
+/*----- NAVIGATION ----- */
+
+.nav {
+    display: grid;
+    background-color: #223E7B;
+    width: 100%;
+    border-bottom: 5px solid #537ebf;
+    outline: 5px solid #6bcbe0;
+    position: fixed;
+}
+
+.nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+
+.nav h1 {
+  font-family: 'Reef', sans-serif;
+  font-size: 30pt;
+  color: #FFFFFF;
+}
+
+.nav h1:hover{
+    -webkit-animation: pulse 0.75s;
+    animation: pulse 0.75s;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/*----- HEADER ----- */
+
+.header {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  align-items: center;
+  text-align: center;
+  background: #223E7B;
+}
+
+.header img {
+    margin: auto;
+    background: #223E7B;
+    margin-top: 200px;
+    padding-left: 80px;
+    padding-right: 80px;    
+    
+}
+
+/*----- ARROW ----- */
+
+.fa-chevron-circle-down {
+    font-size: 50px;
+    color: white;
+    margin-top: 550px;
+}
+
+#down-arrow:hover{
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+
+/*----- ABOUT ----- */
+
+.about {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "about-text avatar";
+  
+}
+
+.about-text {
+    grid-area: about-text;
+    background-color: #FFFFFF;
+}
+
+.about p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    font-weight:700;
+    text-align: left;
+    color: #223E7B; 
+    padding-left: 160px;
+}
+
+.about p4 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    color: #223E7B; 
+}
+
+.about a {
+    font-family: 'Paytone One', sans-serif;
+    color: #6BCBE0;
+    text-decoration: none;
+}
+
+.avatar {
+    grid-area: avatar;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+/*----- PORTFOLIO ----- */
+
+.heading {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: #223E7B;
+    grid-template-rows: 20vh;
+}
+    
+h1 {
+    font-family: 'Peace Sans', sans-serif;
+    font-size: 55pt;
+    color: white;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    color: #6BCBE0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40vh 40vh;
+}
+
+.project-item {
+    background-color: #223E7B;
+    font-size: 30px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio-grid.project-item {
+  max-width: 100%;
+  height: auto;
+}
+
+/*----- CONTACT ----- */
+
+.contact {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    background: #ffffff;
+    grid-template-rows: 30vh;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "contact-text contact-icons";
+}
+
+.contact-text {
+    grid-area: contact-text;
+    background-color: #FFFFFF;
+}
+
+.contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25pt;
+    color: #223E7B;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.contact p1 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25pt;
+    color: #6BCBE0;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.contact p1:hover {
+    color: #4257a6;
+}
+
+.contact p2 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 35pt;
+    color: #223E7B;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.contact-text a {
+    color: #6BCBE0;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    color: #31a1db;
+}
+
+.contact-icons {
+    grid-area: contact-icons;
+    text-align: right;
+    padding-right: 40px;
+}
+
+/*----- SOCIAL MEDIA ----- */
+
+.fa-address-card {
+    color: #4257a6;
+    font-size: 50px;
+    opacity: 0.5;
+    
+}
+
+.fa-address-card:hover {
+    opacity: 1;
+}
+
+.fa-instagram {
+    color: #4257a6;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-instagram:hover {
+    opacity: 1;
+}
+
+.fa-twitter {
+    color: #527fbf;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-twitter:hover {
+    opacity: 1;
+}
+
+.fa-tumblr-square {
+    color: #31a1db;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.fa-tumblr-square:hover {
+    opacity: 1;
+}
+
+/*----- FOOTER ----- */
+
+.footer {
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    color: #223E7B;
+    text-align: center;
+}
+
+/*----- INTRO SCROLL ----- */
+
+.grid-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: static;
+  display: block;
+  background-color: white;
+  z-index: 1;
+    position: relative;
+}
+
+.ParallaxContainer {
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+}
+
+/*----- RETURN TO TOP ----- */
+
+
